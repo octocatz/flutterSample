@@ -49,14 +49,14 @@ class _RandomWordsState extends State<RandomWords> {
     return ListView.builder(
         padding: const EdgeInsets.all(16),
         itemBuilder: (BuildContext _context, int i) {
-          print('i: $i');
+          // print('i: $i');
           if (i.isOdd) {
             return Divider();
           }
           final int index = i ~/ 2;
-          print('index: $index');
+          // print('index: $index');
           final int sugIndex = _suggestions.length;
-          print('_suggestions.length: $sugIndex');
+          // print('_suggestions.length: $sugIndex');
           // developer.log('test01', name: 'index');
           if (index >= _suggestions.length) {
             _suggestions.addAll(generateWordPairs().take(10));
